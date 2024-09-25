@@ -1,0 +1,43 @@
+[versions]
+agp = "8.6.0"
+constraintlayout = "1.1.3"
+design = "28.0.0"
+firebaseAuth = "16.0.5"
+firebaseDatabase = "16.0.4"
+geofireAndroid = "2.1.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+legacySupportV4 = "1.0.0"
+lifecycleExtensions = "2.2.0"
+material = "1.12.0"
+navigationFragment = "2.1.0"
+pinview = "v1.3"
+playServicesMaps = "19.0.0"
+playServicesLocation = "17.0.0"
+monitor = "1.7.2"
+
+[libraries]
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+design = { module = "com.android.support:design", version.ref = "design" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-database = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabase" }
+geofire-android = { module = "com.firebase:geofire-android", version.ref = "geofireAndroid" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4" }
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+navigation-fragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "navigationFragment" }
+pinview = { module = "com.github.GoodieBag:PinView", version.ref = "pinview" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

@@ -1,0 +1,49 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.afinal'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.afinal"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/androidx.*'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.monitor
+    implementation libs.ext.junit
+    implementation libs.constraintlayout
+    implementation libs.firebase.database
+    implementation libs.firebase.auth
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.lifecycle.extensions
+    implementation libs.play.services.maps
+    implementation libs.play.services.location
+    implementation libs.pinview
+    implementation libs.geofire.android
+}
